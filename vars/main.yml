@@ -1,0 +1,18 @@
+new_users:
+    - dockuser
+docker_users:
+    - dockuser
+dockerhub_user: dockuser
+vhosts:
+    - vname: dockerhub.store-plus.atbmarket.com
+      proxy_pass: http://127.0.0.1:5000
+    - vname: dockerhub-ui.store-plus.atbmarket.com
+      proxy_pass: http://127.0.0.1:8000
+proxy_env:
+    http_proxy: ""
+    https_proxy: ""
+    no_proxy: ""
+#proxy_env:
+#    http_proxy: http://proxy-dev.com:8080
+#    https_proxy: http://proxy-dev.com:8080
+#    no_proxy: 127.0.0.1,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16,docker-registry
