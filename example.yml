@@ -8,6 +8,7 @@
     - ./vars/main.yml
   roles:
     - role: base
+    - role: ca-certificates
     - role: add_users
     - role: sysctl
     - role: nginx
