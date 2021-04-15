@@ -4,14 +4,14 @@ docker_users:
     - centos
 dockerhub_user: centos
 vhosts:
-    - vname: dockerhub.store-plus.atbmarket.com
+    - vname: dockerhub.com
       proxy_pass: http://127.0.0.1:5000
-    - vname: dockerhub-ui.store-plus.atbmarket.com
+    - vname: dockerhub-ui.com
       proxy_pass: http://127.0.0.1:8000
 proxy_env:
-    http_proxy: "http://proxy-dev.store-plus.atbmarket.com:8080"
-    https_proxy: "http://proxy-dev.store-plus.atbmarket.com:8080"
-    no_proxy: "rbs-app,shop-sol-d01,.atbmarket.com,127.0.0.1,10.0.0.0/8,172.16.0.0/12,192.168.0.0/1"
+    http_proxy: ""
+    https_proxy: ""
+    no_proxy: ""
 #proxy_env:
 #    http_proxy: http://proxy-dev.com:8080
 #    https_proxy: http://proxy-dev.com:8080
